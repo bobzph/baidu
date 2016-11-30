@@ -1,0 +1,274 @@
+body,html{
+    pading:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+header{
+    width:100%;
+    height:60px;
+    background:#168BD8;
+    margin:0 auto;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.header{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    /*background:red;*/
+    justify-content:space-between;
+    /*align-items: center;*/
+}
+.header a{
+    /*float: left;*/
+    color:#fff;
+    font-family: 微软雅黑;
+}
+.header .logo{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background:url(../img/1a.png) no-repeat;
+}
+.header .index{
+    display: flex;
+    align-items:flex-end;
+    margin-bottom:10px;
+    /*padding: 0 20px;*/
+    font-size: 16px;
+}
+.header .last{
+    display: flex;
+    align-items:flex-end;
+    margin-bottom:8px;
+    font-size: 12px;
+}
+.header a:nth-child(2){
+    margin-left:40px;
+}
+.header a:nth-child(5){
+    margin-left:100px;
+}
+#fullpage{
+    width:100%;
+    height:100%;
+    transition:margin 1s ease;
+}
+#fullpage section{
+    width:100%;
+    height:100%;
+
+}
+#fullpage section:nth-child(1){
+     background:url(../img/1bj.jpg)no-repeat;
+ }
+#fullpage section:nth-child(2){
+    background:url(../img/b1.jpg)no-repeat;
+}
+#fullpage section:nth-child(3){
+    background:url(../img/b3.jpg)no-repeat;
+}
+#fullpage section:nth-child(4){
+    background:url(../img/b4.jpg)no-repeat;
+}
+
+
+/*内容1*/
+.oneleft{
+    height:600px;
+    /*background:red;*/
+    margin-top:60px;
+    position:relative;
+}
+.oneleft .Bd{
+    margin-top:30px;
+    margin-left:185px;
+
+}
+.oneleft .fj{
+    position: absolute;
+    left:500px;
+    animation: feiji 3s ease infinite alternate;
+}
+@keyframes feiji {
+    0%{top:20px}
+    35%{top:25px}
+    70%{top:20px}
+    100%{top:25px}
+
+}
+.chuan{
+    margin-left:300px;
+    margin-top:80px;
+}
+.jian{
+    margin-left:50px;
+    margin-top:-70px;
+
+}
+.oneright{
+    height:600px;
+   /*background:red;*/
+    margin-top:61px;
+    position:relative;
+}
+.denglu{
+    width:340px ;
+    height:300px ;
+    position: absolute;
+    top:100px;
+    left:150px;
+    border-radius: 5px;
+    padding-top: 25px;
+    background: #4ebffc;
+}
+.dltop>div{
+    width: 299px;
+    height: 40px;
+    background: #fff;
+    margin-bottom: 23px;
+    margin-left: 20px;
+}
+.dltop>div>input{
+    outline: none;
+    border: none;
+    width: 252px;
+    height: 20px;
+    padding: 9px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.dltop>div>span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    margin-left: 14px;
+    height: 14px;
+}
+.dltop>div:last-child{
+    background: transparent;
+
+}
+.dltop>div:last-child>input{
+    width: 120px;
+    height: 39px;
+    padding: 9px;
+    font-size: 20px;
+    vertical-align: middle;
+    background: #fff;
+}
+.dltop>div:last-child>img{
+    width: 99px;
+    height: 39px;
+    margin-left: 5px;
+    background: #B8E5FE;
+    vertical-align: middle;
+    border: none;
+}
+.dltop>div:last-child>a{
+    color: #fff;
+
+    font-size: 12px;
+}
+.dltop>div:first-child>span{
+    background: url("../img/icons.png") -124px -12px;
+}
+.dltop>div:nth-child(2)>span{
+    background: url("../img/icons.png") -140px -12px;
+}
+.dlbot div:first-child{
+    width: 299px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.dlbot div:last-child{
+    padding: 0 20px;
+}
+
+
+.dlbot div:last-child>a:first-child{
+    display: inline-block;
+    width:112px;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 12px;
+}
+.dlbot div:last-child>a:hover{
+    text-decoration: underline;
+}
+
+.dlbot div:last-child>a:last-child{
+    display: inline-block;
+    width:48px;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+.dlbot div:last-child>a:first-child>span{
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+    background: url("../img/icons.png") no-repeat -203px -75px;
+}
+.onebottom{
+    width:100%;
+    /*height:50px;*/
+    margin-top:430px;
+    /*background:red;*/
+    position: relative;
+}
+.onebottom img:nth-child(1){
+    margin-left:150px;
+    position: absolute;
+    top:35px;
+
+}
+.onebottom img:nth-child(2){
+    position: absolute;
+    right:70px;
+
+}
+.he{
+    width:100%;
+    height:130px;
+    background:#0B67BE;
+    opacity: .8;
+    position: absolute;
+    top:540px;
+}
+@keyframes jiantou {
+    0%{margin-top:38px;opacity: 1}
+    35%{margin-top:58px;opacity: 0.5}
+    70%{margin-top:38px;opacity: 1;}
+    100%{margin-top:58px;opacity: 0.5;}
+}
+.zhong{
+    width:30px;
+    height:36px;
+    background:red;
+    margin: 0 auto;
+    margin-top:38px;
+    background:url(../img/bjian.png) no-repeat;
+    animation: jiantou 2s ease infinite alternate;
+    cursor: pointer;
+    z-index: 888;
+}
+
